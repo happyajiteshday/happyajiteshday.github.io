@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>🎉 Happy Birthday! 🎂</h1>
+  <div class="color-buttons">
+    <button class="color-button selected" data-scheme="scheme1"></button>
+    <button class="color-button" data-scheme="scheme2"></button>
+    <button class="color-button" data-scheme="scheme3"></button>
+    <button class="color-button" data-scheme="scheme4"></button>
+  </div>
+  <p>Enter a number between 1 and 1500 to read one of the many reasons why I flipping love you:</p>
+  <input id="numberInput" type="number" min="1" max="1500" placeholder="Enter a number">
+  <button id="submitButton" onclick="fetchReason()">Submit</button>
+  <div id="result"></div>
+</body>
+</html>
