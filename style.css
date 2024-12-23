@@ -1,0 +1,134 @@
+/* Default Theme */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fff6db;
+  color: #ff6f61;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 20px 0;
+  text-shadow: 0 0 10px rgba(255, 111, 97, 0.8), 0 0 20px rgba(255, 111, 97, 0.6);
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 200px;
+  border: 2px solid #ff6f61;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65b54;
+}
+
+.color-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.color-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+}
+
+.color-button.selected {
+  border-color: white;
+}
+
+.color-button:hover {
+  transform: scale(1.2);
+}
+
+#result {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ff6f61;
+}
+/* Color Schemes */
+body.scheme1 {
+  background-color: #fff6db;
+  color: #ff6f61;
+}
+
+body.scheme2 {
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+body.scheme3 {
+  background-color: #fce4ec;
+  color: #880e4f;
+}
+
+body.scheme4 {
+  background-color: #f3e5f5; /* Light purple background */
+  color: #6a1b9a; /* Dark purple text */
+}
+
+.color-button[data-scheme="scheme1"] {
+  background-color: #ff6f61;
+}
+
+.color-button[data-scheme="scheme2"] {
+  background-color: #00796b;
+}
+
+.color-button[data-scheme="scheme3"] {
+  background-color: #880e4f;
+}
+
+.color-button[data-scheme="scheme4"] {
+  background-color: #6a1b9a; /* Dark purple button */
+}
+/* Circular buttons with white outline when selected */
+.color-button {
+  width: 40px; /* Make the buttons a bit larger for better visibility */
+  height: 40px;
+  border-radius: 50%; /* Makes the buttons circular */
+  border: 3px solid transparent; /* Initially transparent border */
+  cursor: pointer;
+  transition: transform 0.2s, border 0.3s ease;
+}
+
+.color-button.selected {
+  border-color: black; /* White border when selected */
+}
+
+.color-button:hover {
+  transform: scale(1.2); /* Slightly enlarge button on hover */
+}
+
+.color-button.selected:hover {
+  transform: scale(1.2); /* Keep hover effect on selected buttons */
+}
